@@ -1,1 +1,1 @@
-console.log('Server running on http://localhost:${port}');
+console.log("Running tests for Todo-App...");
