@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home</title>
+	<style>
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			background: #f4f7fb;
+			color: #1f2937;
+		}
+		header {
+			background: #0f172a;
+			color: #fff;
+			padding: 1rem 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			flex-wrap: wrap;
+		}
+		.logo {
+			font-size: 1.4rem;
+			font-weight: 700;
+		}
+		nav ul {
+			list-style: none;
+			display: flex;
+			gap: 1rem;
+			margin: 0;
+			padding: 0;
+			flex-wrap: wrap;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 0.5rem 0.75rem;
+			border-radius: 0.5rem;
+		}
+		nav a:hover { background: rgba(255,255,255,0.12); }
+		.hero {
+			max-width: 1000px;
+			margin: 4rem auto 2rem;
+			padding: 0 2rem;
+			text-align: center;
+		}
+		.hero h1 {
+			font-size: clamp(2.5rem, 6vw, 4.5rem);
+			margin-bottom: 1rem;
+			color: #0f172a;
+		}
+		.hero p {
+			font-size: 1.1rem;
+			line-height: 1.7;
+			color: #475569;
+			max-width: 700px;
+			margin: 0 auto 2rem;
+		}
+		.btn {
+			display: inline-block;
+			background: #2563eb;
+			color: #fff;
+			text-decoration: none;
+			padding: 0.9rem 1.4rem;
+			border-radius: 0.6rem;
+			font-weight: 700;
+		}
+		.btn:hover { background: #1d4ed8; }
+		.cards {
+			max-width: 1000px;
+			margin: 0 auto 4rem;
+			padding: 0 2rem;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 1.25rem;
+		}
+		.card {
+			background: #fff;
+			padding: 1.5rem;
+			border-radius: 1rem;
+			box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+		}
+		.card h2 { margin-top: 0; color: #0f172a; }
+		footer {
+			text-align: center;
+			padding: 1.5rem;
+			color: #64748b;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">Parth Sata</div>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<h1>Welcome to Our Home Page</h1>
+			<p>
+				This is a simple homepage with a clean navigation bar, hero section, and feature cards.
+				It is responsive and easy to customize for your project.
+			</p>
+			<a class="btn" href="#about">Learn More</a>
+		</section>
+
+		<section class="cards">
+			<div class="card" id="about">
+				<h2>About Us</h2>
+				<p>We create modern, user-friendly web experiences built for clarity and performance.</p>
+			</div>
+			<div class="card" id="services">
+				<h2>Services</h2>
+				<p>Explore design, development, and support services tailored to your needs.</p>
+			</div>
+			<div class="card" id="contact">
+				<h2>Contact</h2>
+				<p>Reach out to us anytime for questions, feedback, or project discussions.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		&copy; 2026 MyWebsite. All rights reserved.
+	</footer>
+</body>
+</html>
